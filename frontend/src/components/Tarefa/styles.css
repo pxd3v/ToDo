@@ -1,0 +1,79 @@
+.tarefa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    height: 600px;
+    text-align: center;
+    border: solid #ddd;
+    padding: 0px;
+    margin: 0px;
+    justify-content: center;
+    font-size: 22px;
+    background-color: #eee;
+
+    
+  }
+  
+  .tarefa img {
+    width: 80%;
+    height: 60%;
+  }
+  
+  .tarefa header {
+    margin-top: 4px;
+    margin-bottom: 0px;
+    font-weight: bold;
+  }
+
+  .tarefa p {
+    font-size: 15px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+  }
+  .tarefa button {
+    display: flex;
+    float: inline-end;
+    width: 100%;
+    height: 10px;
+  }
+  
+
+  .on {
+    background-color: rgb(74, 216, 104);
+  }
+
+  .off {
+    background-color: #c83535;
+  }
+
+  ul {
+    padding: 0px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+  
+  }
+  li {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-self: center;
+    border: solid 2px #eee;
+    width: 90%;
+    margin-top: 1px;
+    margin-bottom: 1px;
+  }
+
+  .todos{
+    background-color: #ddd;
+  }
+  
+  .pendente{
+    background-color: rgb(74, 216, 104);
+  }
+  
+  .feitos {
+    background-color: #c83535;
+  }
