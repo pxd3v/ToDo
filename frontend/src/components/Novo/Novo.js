@@ -13,7 +13,6 @@ export default function Novo(){
         if(titulo != ''){
         if(descricao != ''){
         await api.post('/tarefa', {"titulo": titulo, "descricao": descricao, "status": "0"})
-        window.location.reload();
         }
         }
         

@@ -41,10 +41,12 @@
 
   .on {
     background-color: rgb(74, 216, 104);
+    cursor:pointer;
   }
 
   .off {
     background-color: #c83535;
+    cursor:pointer;
   }
 
   ul {

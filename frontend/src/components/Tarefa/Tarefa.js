@@ -13,19 +13,15 @@ const Tarefa = (props) => {
 
             setTarefas(response.data)
         }
-        
         loadTarefas();
-
-    }, [])
+    }, [tarefas])
 
     async function handleClick(tarefa) {
         if(tarefa.status == 1){
             await api.put(`/tarefa/${tarefa.id}`, {"titulo": tarefa.titulo, "descricao": tarefa.descricao, "status": "0"})
-            window.location.reload();
         }
         else{
             await api.put(`/tarefa/${tarefa.id}`, {"titulo": tarefa.titulo, "descricao": tarefa.descricao, "status": "1"})
-            window.location.reload();
         }
     }
 
