@@ -7,25 +7,25 @@ import Menu from './components/Menu/Menu'
 import Novo from './components/Novo/Novo'
 
 function App(props) {
-  const [show1, setShow1] = useState(true);
-  const [show2, setShow2] = useState(false);
-  const [show3, setShow3] = useState(false);
+  const [showAll, setShowAll] = useState(true);
+  const [showPendentes, setShowPendentes] = useState(false);
+  const [showFeitos, setShowFeitos] = useState(false);
   
   function handleTodos() {
-      setShow1(true)
-      setShow2(false)
-      setShow3(false)
+      setShowAll(true)
+      setShowPendentes(false)
+      setShowFeitos(false)
   }
 
   function handlePendentes() {
-      setShow1(false)
-      setShow2(true)
-      setShow3(false)
+      setShowAll(false)
+      setShowPendentes(true)
+      setShowFeitos(false)
   }
   function handleFeitos() {
-      setShow1(false)
-      setShow2(false)
-      setShow3(true)
+      setShowAll(false)
+      setShowPendentes(false)
+      setShowFeitos(true)
   }
 
   return (
@@ -35,9 +35,9 @@ function App(props) {
         handlePendentes={() => handlePendentes()}
         handleFeitos={() => handleFeitos()}
         />
-        <Tarefa  show={show1} stats={"all"}/>
-        <Tarefa  show={show2} stats={false}/>
-        <Tarefa  show={show3} stats={true}/>
+        <Tarefa  show={showAll} stats={"all"}/>
+        <Tarefa  show={showPendentes} stats={false}/>
+        <Tarefa  show={showFeitos} stats={true}/>
         <Novo />
       </header>
     </div>
