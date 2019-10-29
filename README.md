@@ -1,5 +1,5 @@
 # ToDo
-Project of a To do list using springboot and react!
+Projeto de uma lista de tarefas, usando spring e react!
 
 # Inicialização
 
