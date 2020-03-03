@@ -1,5 +1,5 @@
 # ToDo
-Projeto de uma lista de tarefas, usando spring e react!
+Projeto de uma lista de tarefas, usando spring, react e mysql como banco de dados!
 
 # Inicialização
 
